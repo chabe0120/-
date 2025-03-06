@@ -215,9 +215,10 @@ public class Qes1_13 {
 		//BMIは22.6です
 		fl = 168.5f;
 		dou = 64.2d;
-				
+		double result22;
+		result22 = Math.pow(fl, fl);
 		System.out.println("------------------");
-		System.out.println("BMIは"+ (dou / (fl * fl)) +"です");
+		System.out.println("BMIは"+ (dou / result22) +"です");
 	}
 
 }
