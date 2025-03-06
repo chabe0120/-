@@ -133,12 +133,91 @@ public class Qes1_13 {
 		System.out.println("------------------");
 		System.out.println("b - s は"+ (b - s) +"です");
 		
-		String num="20";
-		int num1=23;
+		String num = "20";
+		int num01 = Integer.parseInt(num);
+		int num1 = 23;
 		
 		System.out.println("------------------");
-		System.out.println("ハローJAVA"+ (num + (int)num1) +"です");
+		System.out.println("ハローJAVA"+ (num01 + num1) +"です");
+		
+		//『山田太郎 18歳 170.5cm 62.2kg 寿司』
+		String Str;
+		Str = null;
+		Str = "山田太郎";
+		
+		byte by;
+		by = 0;
+		by = 18;
+		
+		float fl;
+		fl = 0.0f;
+		fl = 170.5f;
+		
+		double dou;
+		dou = 0.0d;
+		dou = 62.2d;
+		
+		String STR;
+		STR = null;
+		STR = "寿司";
+		
+		//「初めまして○○です」
+		System.out.println("------------------");
+		System.out.println("初めまして"+ Str +"です");
+		
+		//「年齢は○○歳です」
+		System.out.println("------------------");
+		System.out.println("年齢は"+ by +"歳です");
+		
+		//「身長は○○cmです」
+		System.out.println("------------------");
+		System.out.println("身長は"+ fl +"cmです");
+		
+		//「体重は○○kgです」
+		System.out.println("------------------");
+		System.out.println("体重は"+ dou +"kgです");
+		
+		//「好きな食べ物は○○です」
+		System.out.println("------------------");
+		System.out.println("好きな食べ物は"+ STR +"です");
 
+		//再代入する
+		//初めまして鈴木一郎です
+		Str = "鈴木一郎";
+		
+		System.out.println("------------------");
+		System.out.println("初めまして"+ Str +"です");
+		
+		//年齢は24歳です
+		by = 18;
+		
+		System.out.println("------------------");
+		System.out.println("年齢は"+ by +"歳です");
+		
+		//身長168.5cmです
+		fl = 168.5f;
+		
+		System.out.println("------------------");
+		System.out.println("身長は"+ fl +"cmです");
+		
+		//体重は64.2kgです
+		dou = 64.2d;
+				
+		System.out.println("------------------");
+		System.out.println("体重は"+ dou +"kgです");
+		
+		//好きな食べ物はオムライスです
+		STR = "オムライス";
+				
+		System.out.println("------------------");
+		System.out.println("好きな食べ物は"+ STR +"です");
+		
+		//BMIは22.6です
+		fl = 168.5f;
+		dou = 64.2d;
+				
+		System.out.println("------------------");
+		System.out.println("BMIは"+ (dou / (fl * fl)) +"です");
 	}
 
 }
