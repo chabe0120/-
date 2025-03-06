@@ -133,6 +133,7 @@ public class Qes1_13 {
 		System.out.println("------------------");
 		System.out.println("b - s は"+ (b - s) +"です");
 		
+		//「ハローJAVA2023」を「ハローJAVA43」と表示させる
 		String num = "20";
 		int num01 = Integer.parseInt(num);
 		int num1 = 23;
@@ -153,9 +154,9 @@ public class Qes1_13 {
 		fl = 0.0f;
 		fl = 170.5f;
 		
-		double dou;
-		dou = 0.0d;
-		dou = 62.2d;
+		double fl1;
+		fl1 = 0.0d;
+		fl1 = 62.2d;
 		
 		String STR;
 		STR = null;
@@ -175,50 +176,119 @@ public class Qes1_13 {
 		
 		//「体重は○○kgです」
 		System.out.println("------------------");
-		System.out.println("体重は"+ dou +"kgです");
+		System.out.println("体重は"+ fl1 +"kgです");
 		
 		//「好きな食べ物は○○です」
 		System.out.println("------------------");
 		System.out.println("好きな食べ物は"+ STR +"です");
 
+		
+		//BMIを代入
+		double result25;
+		fl = 1.705f;
+		result25 = Math.pow(fl, fl);
+		System.out.println("------------------");
+		System.out.println("BMIは"+ String.format("%.1f",fl1 / (fl * fl)) +"です");
+		
 		//再代入する
 		//初めまして鈴木一郎です
 		Str = "鈴木一郎";
 		
-		System.out.println("------------------");
-		System.out.println("初めまして"+ Str +"です");
-		
 		//年齢は24歳です
-		by = 18;
-		
-		System.out.println("------------------");
-		System.out.println("年齢は"+ by +"歳です");
+		by = 24;
 		
 		//身長168.5cmです
 		fl = 168.5f;
 		
-		System.out.println("------------------");
-		System.out.println("身長は"+ fl +"cmです");
-		
 		//体重は64.2kgです
-		dou = 64.2d;
-				
-		System.out.println("------------------");
-		System.out.println("体重は"+ dou +"kgです");
+		fl1 = 64.2d;
 		
 		//好きな食べ物はオムライスです
 		STR = "オムライス";
+		
+		//BMIは22.6です
+		fl = 168.5f;
+		fl1 = 64.2d;
+		
+		System.out.println("------------------");
+		System.out.println("初めまして"+ Str +"です");
+		
+
+		
+		System.out.println("------------------");
+		System.out.println("年齢は"+ by +"歳です");
+		
+		
+		System.out.println("------------------");
+		System.out.println("身長は"+ fl +"cmです");
+		
+				
+		System.out.println("------------------");
+		System.out.println("体重は"+ fl1 +"kgです");
 				
 		System.out.println("------------------");
 		System.out.println("好きな食べ物は"+ STR +"です");
 		
-		//BMIは22.6です
-		fl = 168.5f;
-		dou = 64.2d;
+		//身長をｍに直した。
 		double result22;
+		fl = 1.685f;
+		
 		result22 = Math.pow(fl, fl);
 		System.out.println("------------------");
-		System.out.println("BMIは"+ (dou / result22) +"です");
+		System.out.println("BMIは"+ String.format("%.1f",fl1 / (fl * fl)) +"です");
+		
+		//年齢・身長・体重】の数値を和算で自己代入
+		Str = "鈴木一郎";
+		
+		//年齢は48歳です
+		by = 24;
+		
+		//身長337.0cmです
+		fl = 168.5f;
+		
+		//体重は64.2kgです
+		fl1 = 64.2d;
+		
+		//好きな食べ物はオムライスです
+		STR = "オムライス";
+		
+		System.out.println("------------------");
+		System.out.println("初めまして"+ Str +"です");
+		
+		System.out.println("------------------");
+		System.out.println("年齢は"+ (by + by) +"歳です");
+		
+		System.out.println("------------------");
+		System.out.println("身長は"+ String.format("%.1f", fl + fl) +"cmです");
+		
+		System.out.println("------------------");
+		System.out.println("体重は"+ String.format("%.1f",fl1 + fl1) +"kgです");
+		
+		System.out.println("------------------");
+		System.out.println("好きな食べ物は"+ STR +"です");
+		
+		//身長をｍに直した。
+		double result29;
+		fl = 3.37f;
+		
+		result29 = Math.pow(fl , fl);
+		System.out.println("------------------");
+		System.out.println("BMIは"+ String.format("%.2f",(fl1 + fl1) / (fl * fl)) +"です");
+		
+		//年齢が25歳以上ならtrue
+		by = 24;
+		
+		System.out.println("------------------");
+		
+		System.out.println("変数blは"+ bl +"です");//ブーリアン型
+		
+		
+		
+		
+		
+		
+		
+		
 	}
 
 }
