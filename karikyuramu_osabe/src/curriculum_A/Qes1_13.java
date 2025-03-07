@@ -369,10 +369,6 @@ public class Qes1_13 {
 		result30 = true;
 		System.out.println("年齢が25もしくは身長が160以上なら"+ result30 +"です");
 
-		
-	    
-	    
-	    
 	}
 
 }
