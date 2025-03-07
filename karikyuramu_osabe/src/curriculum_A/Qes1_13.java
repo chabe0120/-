@@ -359,8 +359,6 @@ public class Qes1_13 {
 		System.out.println("------------------");
 	    System.out.println("身長は : " + Intfl + "cmです");
 	    
-	    
-	    
 	    //⑬12で変換した【年齢・身長】で【年齢が25もしくは身長が160以上】
 	    //であればtrueを出力してください
 	    
