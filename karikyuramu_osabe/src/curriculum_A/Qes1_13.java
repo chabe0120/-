@@ -4,93 +4,117 @@ public class Qes1_13 {
 
 	public static void main(String[] args) {
 		// TODO 自動生成されたメソッド・スタブ
-		//下記9個をローカル変数として宣言のみしてください
+		
+		//①下記9個をローカル変数として宣言のみしてください
 		
 		//バイト型
-		byte b; 
+		byte b;
+		
+		//短整数型
+		short s;
+		
+		//整数型
+		int i;
+		
+		//長整数型
+		long l;
+		
+		//単精度浮動小数点数型
+		float f;
+		
+		//倍精度浮動小数点数型
+		double d;
+		
+		//文字型
+		char c;
+		
+		//文字列型
+		String str;
+		
+		//ブーリアン型
+		boolean bl;
+		
+		//②それぞれのローカル変数をローカル内でそれぞれの初期値を代入し初期化してください
+		
 		b = 0;//初期値になる
+		
+		s= 0;
+		
 		b = 10;//下に行くほど更新する
 		
+		i= 0;
+		
+		l= 0;
+		
+		f= 0.0f;
+		
+		d= 0.0d;
+		
+		c= '\u0000';//10進数
+		//char c1 = 0b0100_0001; // 2進数(0b始まり、"_"で区切ることもできる)
+		//char c2 = 0101; // 8進数(0始まり)
+		//char c3 = 0x41; // 16進数(0x始まり)
+		
+		str = null;
+		
+		bl= false;
+		
+		//③初期化をしたそれぞれの変数に下記の値を代入してください
 		System.out.println("------------------");
 		
 		System.out.println("変数bは"+ b +"です");
 		 
-		//短整数型
-		short s;
-		s= 0;
 		s= 100;
 		
 		System.out.println("------------------");
 		
 		System.out.println("変数sは"+ s +"です");
 		 
-		//整数型
-		int i;
-		i= 0;
 		i= 1000;
 		
 		System.out.println("------------------");//lnは改行コード
 		
 		System.out.println("変数iは"+ i +"です");//+消すとエラーが出る…なぜ？
         
-		//長整数型
-		long l;
-		l= 0;
 		l= 10000;
 		
 		System.out.println("------------------");
 		
 		System.out.println("変数lは"+ l +"です");
 		
-		//単精度浮動小数点数型
-		float f;
-		f= 0.0f;
 		f= 9.5f;
 		
 		System.out.println("------------------");
 		
 		System.out.println("変数fは"+ f +"です");
         
-		//倍精度浮動小数点数型
-		double d;
-		d= 0.0d;
 		d= 10.5d;
 		
 		System.out.println("------------------");
 		
 		System.out.println("変数dは"+ d +"です");
 		
-		//文字型
-		char c;
-		c= '\u0000';//10進数
 		c=  'a';
-		
-		//char c1 = 0b0100_0001; // 2進数(0b始まり、"_"で区切ることもできる)
-		//char c2 = 0101; // 8進数(0始まり)
-		//char c3 = 0x41; // 16進数(0x始まり)
 		
 		System.out.println("------------------");
 		
 		System.out.println("変数cは"+ c +"です");
         
-		//文字列型
-		String str;
-		str = null;
 		str = "ハロー";
 		
 		System.out.println("------------------");
 		
 		System.out.println("変数strは"+ str +"です");
         
-		//ブーリアン型
-		boolean bl;
-		bl= false;
 		bl= true;
 		
 		System.out.println("------------------");
 		
 		System.out.println("変数blは"+ bl +"です");//ブーリアン型
 		
+		//④下記の通りにコンソール出力されるようにしてください
+		//上記で作成した変数を必ず使用すること
+
 		long result;
 		result = 0;
 		result = b + s + i + (int)l;
@@ -133,7 +157,10 @@ public class Qes1_13 {
 		System.out.println("------------------");
 		System.out.println("b - s は"+ (b - s) +"です");
 		
-		//「ハローJAVA2023」を「ハローJAVA43」と表示させる
+		//⑤次のプログラムを実行すると「ハローJAVA2023」という結果が表示されます。
+		//「ハローJAVA43」と表示とさせたいのですが、意図通りに動きません。
+		//正しく動作するように修正してください。
+
 		String num = "20";
 		int num01 = Integer.parseInt(num);
 		int num1 = 23;
@@ -141,7 +168,9 @@ public class Qes1_13 {
 		System.out.println("------------------");
 		System.out.println("ハローJAVA"+ (num01 + num1) +"です");
 		
-		//『山田太郎 18歳 170.5cm 62.2kg 寿司』
+		//⑥『』で囲われた人の情報を変数にして、formatの通りコンソールに出力してください
+		//ローカル変数に代入し○○に入れてください
+
 		String Str;
 		Str = null;
 		Str = "山田太郎";
@@ -183,14 +212,18 @@ public class Qes1_13 {
 		System.out.println("好きな食べ物は"+ STR +"です");
 
 		
-		//BMIを代入
+		//⑦6で作成した自己紹介に続いてBMIが出力されるようにしてください
+		//「BMIは○○です」
+		//ただし計算は数値を直書きせず、全て変数を使ってすること
+
 		double result25;
 		fl = 1.705f;
 		result25 = Math.pow(fl, fl);
 		System.out.println("------------------");
 		System.out.println("BMIは"+ String.format("%.1f",fl1 / (fl * fl)) +"です");
 		
-		//再代入する
+		//⑧6で宣言した変数に再代入し下記の通りコンソールに出力してください
+
 		//初めまして鈴木一郎です
 		Str = "鈴木一郎";
 		
@@ -237,7 +270,8 @@ public class Qes1_13 {
 		System.out.println("------------------");
 		System.out.println("BMIは"+ String.format("%.1f",fl1 / (fl * fl)) +"です");
 		
-		//年齢・身長・体重】の数値を和算で自己代入
+		//⑨8で使用した変数【年齢・身長・体重】の数値を和算で自己代入し、
+		//下記の通りコンソールに出力してください
 		Str = "鈴木一郎";
 		
 		//年齢は48歳です
@@ -271,24 +305,74 @@ public class Qes1_13 {
 		double result29;
 		fl = 3.37f;
 		
+		//BMIは11.31です
 		result29 = Math.pow(fl , fl);
 		System.out.println("------------------");
 		System.out.println("BMIは"+ String.format("%.2f",(fl1 + fl1) / (fl * fl)) +"です");
 		
-		//年齢が25歳以上ならtrue
-		by = 24;
-		
+		//➉8で使用した年齢が25歳以上ならtrueが出力されるようにしてください。ただしif文は使いません
+
+		boolean result55= (by >= 25);
 		System.out.println("------------------");
+		result55 = true;
+		System.out.println("年齢が25歳以上なら"+ result55 +"です");//ブーリアン型
 		
-		System.out.println("変数blは"+ bl +"です");//ブーリアン型
+		//⑪8で使用した【年齢・身長・体重】を文字列型に型変換し繋げて出力してください
 		
+		//年齢
+		//byte→String
+		by = 18;
 		
+		String strby = String.valueOf(by);
+		System.out.println("------------------");
+	    System.out.println("年齢は : " + strby + "歳です");
 		
+		//身長
+		//float→String
+		fl = 170.5f;
+		String strfl = String.valueOf(fl);
+		System.out.println("------------------");
+	    System.out.println("身長は : " + strfl + "cmです");
 		
+		//体重
+		//double→String
+		fl1 = 62.2d;
 		
+		String strfl1 = String.valueOf(fl1);
+		System.out.println("------------------");
+	    System.out.println("体重は : " + strfl1 + "kgです");
+	    
+	    //⑫11で変換した【年齢・身長】を整数型に変換して出力してください
+	    
+		//年齢
+		//byte→String
 		
+		Integer number = Integer.valueOf(by);
+		System.out.println("------------------");
+	    System.out.println("年齢は : " + number + "歳です");
 		
+		//身長
+		//float→String
+	    
+	    Integer aaa = Math.round(fl);
+		Integer Intfl = Integer.valueOf(aaa);
+		System.out.println("------------------");
+	    System.out.println("身長は : " + Intfl + "cmです");
+	    
+	    
+	    
+	    //⑬12で変換した【年齢・身長】で【年齢が25もしくは身長が160以上】
+	    //であればtrueを出力してください
+	    
+		boolean result30= (number == 25 || Intfl >= 160);
+		System.out.println("------------------");
+		result30 = true;
+		System.out.println("年齢が25もしくは身長が160以上なら"+ result30 +"です");//ブーリアン型
+
 		
+	    
+	    
+	    
 	}
 
 }
