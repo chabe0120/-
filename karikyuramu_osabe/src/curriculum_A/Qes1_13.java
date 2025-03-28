@@ -36,19 +36,8 @@ public class Qes1_13 {
 		
 		//②それぞれのローカル変数をローカル内でそれぞれの初期値を代入し初期化してください
 		
-		b = 0;//初期値になる
-		
-		s= 0;
-		
 		b = 10;//下に行くほど更新する
-		
-		i= 0;
-		
-		l= 0;
-		
-		f= 0.0f;
-		
-		d= 0.0d;
+
 		
 		c= '\u0000';//10進数
 		//char c1 = 0b0100_0001; // 2進数(0b始まり、"_"で区切ることもできる)
@@ -116,43 +105,36 @@ public class Qes1_13 {
 		//上記で作成した変数を必ず使用すること
 
 		double result;
-		result = 0;
 		result = b + s + i + (int)l;
 		System.out.println("------------------");
 		System.out.println("b + s + i + l は"+ (b + s + i + l) +"です");
 		
 		double result1;
-		result1 = 0;
 		result1 = d + f;
 		System.out.println("------------------");
 		System.out.println("d + f は"+ (Math.round(d + f)) +"です");
 		
 		String result2;
-		result2 = null;
 		result2 = c + str + bl;
 		System.out.println("------------------");
 		System.out.println("c + str + bl は"+ (c + str + bl) +"です");
 		
 		double result3;
-		result3 = 0;
 		result3 = b + s + i + l + f + d;
 		System.out.println("------------------");
 		System.out.println("b + s + i + l + f + d は"+ (Math.round(b + s + i + l + f + d)) +"です");
 		
 		double result4;
-		result4 = 0;
 		result4 = b * s * i * l;
 		System.out.println("------------------");
 		System.out.println("b * s * i * l は"+ (b * s * i * l) +"です");
 		
 		double result5;
-		result5 = 0;
 		result5 = d / s;
 		System.out.println("------------------");
 		System.out.println("d / s は"+ (d / s) +"です");
 		
 		double result6;
-		result6 = 0;
 		result6 = b - s;
 		System.out.println("------------------");
 		System.out.println("b - s は"+ (b - s) +"です");
@@ -172,23 +154,18 @@ public class Qes1_13 {
 		//ローカル変数に代入し○○に入れてください
 
 		String Name;
-		Name = null;
 		Name = "山田太郎";
 		
 		int age;
-		age = 0;
 		age = 18;
 		
 		float height;
-		height = 0.0f;
 		height = 170.5f;
 		
 		double weight;
-		weight = 0.0d;
 		weight = 62.2d;
 		
 		String EAT;
-		EAT = null;
 		EAT = "寿司";
 		
 		//「初めまして○○です」
