@@ -36,17 +36,8 @@ public class rion {
 		lion.setheight(2.1);    // 体長設定
 		lion.setspeed(80);     // 速度設定
 
-		// 出力
 		System.out.println("動物名：" + lion.getAnimal());
 		System.out.println("体長：" + lion.getheight() + "m");
 		System.out.println("速度：" + lion.getspeed() + "km/h");
-		
-		
-		
-		
-	  	//動物名：ライオン
-		//体長：2.1m
-		//速度：80km/h
 	}
-
 }
