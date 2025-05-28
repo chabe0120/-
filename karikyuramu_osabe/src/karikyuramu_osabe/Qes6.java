@@ -41,8 +41,7 @@ public class Qes6 {
 				 //.equalsはDtring型の比較
 				 String result = str.equals("テレビ") ? "テレビの残り台数は"+ number +"台です" : "ディスプレイの残り台数は"+ (11 - number) +"台です";
 				 System.out.println(result);
-				 continue;
-				 //break;
+				 break;
 				 
 			 default:
 				 System.out.println("『"+ str + "』は指定の商品ではありません");
@@ -51,5 +50,4 @@ public class Qes6 {
 		}
 		System.out.println();
 	}
-
 }
