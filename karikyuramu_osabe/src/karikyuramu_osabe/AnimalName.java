@@ -13,6 +13,7 @@ public class AnimalName {
 		}
 	}
 	
+	
 	public  String getScientificName(String animalName){
 		// 動物を格納する変数を初期化
 		String scientificName = null;
