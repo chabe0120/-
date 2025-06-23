@@ -12,7 +12,7 @@ public class MainAnimal {
 		//入力した値を動物区切りにする
 		String[] Animals = scan.nextLine().split(",");
 		AnimalName animal = new AnimalName();
-		animal.MainAnimal(Animals);
+		animal.animaldata(Animals);
 	}
 
 

@@ -2,7 +2,7 @@ package karikyuramu_osabe;
 
 public class AnimalName {
 	
-	public void MainAnimal(String[] animalarray) {
+	public void animaldata(String[] animalarray) {
 		for(int i = 0; i < animalarray.length; i++) {
 			String[] Animals = animalarray[i].split(":");
 			
@@ -12,7 +12,6 @@ public class AnimalName {
 			System.out.println("学名："+ this.getScientificName(Animals[0]) +"\n");
 		}
 	}
-	
 	
 	public  String getScientificName(String animalName){
 		// 動物を格納する変数を初期化
